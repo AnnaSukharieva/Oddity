@@ -1,0 +1,78 @@
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  & > div{
+    margin-bottom: 20px;
+  }
+  .oddity {
+    background-image: url(../img/oddity_logo.png);
+  }
+  &__logo {
+    background-size: contain;
+    background-image: url(../img/google_logo.png);
+    background-repeat: no-repeat;
+    height: 92px;
+    width: 100%;
+    background-position: center;
+    transition: background 0.5s ease;
+  }
+  &__search {
+    border: 1px solid #dfe1e5;
+    padding: 10px;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    input {
+      width: 440px;
+      padding: 0 13px;
+    }
+    &-dandruff,
+    &-camera {
+      height: 20px;
+      line-height: 20px;
+      width: 20px;
+    }
+    &-camera {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    &-keyboard {
+      height: 20px;
+      margin-right: 16px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    &:hover,
+    &:active {
+      box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+    }
+  }
+  &__buttons {
+    display: flex;
+    a {
+      display: block;
+      background-color: #f8f9fa;
+      border: 1px solid #f8f9fa;
+      border-radius: 4px;
+      color: #3c4043;
+      margin: 11px 10px;
+      padding: 5px 16px;
+      line-height: 27px;
+      cursor: pointer;
+      &:hover {
+        text-decoration: none;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+        border: 1px solid #dadce0;
+      }
+    }
+  }
+  &__language {
+    a {
+      color: #1b66c9;
+    }
+  }
+}

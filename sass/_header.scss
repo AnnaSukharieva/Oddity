@@ -1,0 +1,41 @@
+header {
+  margin: 5px;
+  nav {
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      .navigation {
+        &__login {
+          background: #1a73e8;
+          color: #fff;
+          padding: 9px 27px;
+          margin: 9px;
+          border-radius: 4px;
+          font-size: 14px;
+          &:hover {
+            cursor: pointer;
+            background: #1b66c9;
+            box-shadow: 0 1px 3px 1px rgba(66, 64, 67, 0.15),
+              0 1px 2px 0 rgba(60, 64, 67, 0.3);
+          }
+        }
+        &__menu {
+          img{
+            height: 23px;
+          }
+          &:hover {
+            cursor: pointer;
+            transition: all 0.5s ease-out;
+            background-color: rgba(60, 64, 67, 0.08);
+            border-radius: 50px;
+          }
+        }
+      }
+      li {
+        display: block;
+        padding: 9px;
+      }
+    }
+  }
+}
